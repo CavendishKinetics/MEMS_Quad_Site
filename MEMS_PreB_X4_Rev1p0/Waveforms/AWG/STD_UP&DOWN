@@ -1,0 +1,6 @@
+# If multiple channels are being written to the AWG, the final waveform will have the length 
+# devided by the number of channels. (Possibly bug in AWG Firmware).
+# Since this file is loaded for both channels, provide your length values twice the desired values.
+# WaveformName	DCVoltageValue	DurationValue(X2)
+AllLow	0	4.2e-6
+AllLow10u	0	10e-6

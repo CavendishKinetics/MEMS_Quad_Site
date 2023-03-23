@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:pm="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" schemaVersion="1.0" xsi:schemaLocation="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd C:/Program%20Files%20(x86)/National%20Instruments/TestStand%202012/Components/Schemas/NI_SemiconductorModule/PinMap.xsd">
+
+	<Pins>
+
+		<DUTPin name="Cap1"/>
+		<DUTPin name="RFSwitch"/>
+
+		<SystemPin name="RFSwitch_Vdd"/>
+		<SystemPin name="PD_SMU_AWG_5V"/>
+		<SystemPin name="SMU_PD_PU_5V"/>
+
+		<DUTPin name="RF1"/>
+		<DUTPin name="RF2"/>
+		<DUTPin name="RF3"/>
+		<DUTPin name="RF4"/>
+
+	 	<SystemPin name="UP"/>
+	 	<SystemPin name="DOWN"/>
+		<SystemPin name="SMU_PD"/>
+
+
+	</Pins>
+	
+	<Instruments>
+		<Instrument name="5632_0" instrumentTypeId="VNA">
+			<ChannelGroup id="allChannels">
+				<Channel id="port1"/>
+				<Channel id="port2"/>
+			</ChannelGroup>
+		</Instrument>
+		<Instrument name="5632_1" instrumentTypeId="VNA">
+			<ChannelGroup id="allChannels">
+				<Channel id="port1"/>
+				<Channel id="port2"/>
+			</ChannelGroup>
+		</Instrument>
+
+		<Instrument name="5451_0" instrumentTypeId="AWG">
+			<ChannelGroup id="allChannels">
+				<Channel id="0"/>
+				<Channel id="1"/>
+			</ChannelGroup>
+		</Instrument>
+
+		<NIDCPowerInstrument name="4139_1" numberOfChannels="1"/> <!-- SMU_PD -->
+		
+		<NIDCPowerInstrument name="4145_0" numberOfChannels="4"/> <!-- Site 0 -->
+		<NIDCPowerInstrument name="4145_1" numberOfChannels="4"/> <!-- Site 1 -->
+		<NIDCPowerInstrument name="4145_2" numberOfChannels="4"/> <!-- Site 2 -->
+		<NIDCPowerInstrument name="4145_3" numberOfChannels="4"/> <!-- Site 3 -->
+		
+		<NIDCPowerInstrument name="4145_4" numberOfChannels="4"/><!-- RFSwitch -->
+
+		<NIDCPowerInstrument name="4145_5" numberOfChannels="4"/>
+<!-- RFSwitch_Vdd, PD_SMU_AWG_5V, SMU_PD_PU_5V -->
+
+	</Instruments>
+	
+	<Sites>
+		<Site siteNumber="0"/>
+		<Site siteNumber="1"/>
+		<Site siteNumber="2"/>
+		<Site siteNumber="3"/>
+	</Sites>
+	
+	<Connections>
+
+		<Connection pin="Cap1" 		siteNumber="0" instrument="5632_0" channel="port1"/>
+		<Connection pin="Cap1" 		siteNumber="1" instrument="5632_0" channel="port2"/>
+		<Connection pin="Cap1" 		siteNumber="2" instrument="5632_1" channel="port1"/>
+		<Connection pin="Cap1" 		siteNumber="3" instrument="5632_1" channel="port2"/>
+
+		<SystemConnection pin="SMU_PD" instrument="4139_1" channel="0"/>
+
+		<!-- AWG -->
+		<SystemConnection pin="UP" instrument="5451_0" channel="0"/>
+		<SystemConnection pin="DOWN" instrument="5451_0" channel="1"/>
+
+		<Connection pin="RF1" 		siteNumber="0" instrument="4145_0" channel="0"/>
+		<Connection pin="RF2" 		siteNumber="0" instrument="4145_0" channel="1"/>
+		<Connection pin="RF3" 		siteNumber="0" instrument="4145_0" channel="2"/>
+		<Connection pin="RF4" 		siteNumber="0" instrument="4145_0" channel="3"/>
+
+		<Connection pin="RF1" 		siteNumber="1" instrument="4145_1" channel="0"/>
+		<Connection pin="RF2" 		siteNumber="1" instrument="4145_1" channel="1"/>
+		<Connection pin="RF3" 		siteNumber="1" instrument="4145_1" channel="2"/>
+		<Connection pin="RF4" 		siteNumber="1" instrument="4145_1" channel="3"/>
+
+		<Connection pin="RF1" 		siteNumber="2" instrument="4145_2" channel="0"/>
+		<Connection pin="RF2" 		siteNumber="2" instrument="4145_2" channel="1"/>
+		<Connection pin="RF3" 		siteNumber="2" instrument="4145_2" channel="2"/>
+		<Connection pin="RF4" 		siteNumber="2" instrument="4145_2" channel="3"/>
+
+		<Connection pin="RF1" 		siteNumber="3" instrument="4145_3" channel="0"/>
+		<Connection pin="RF2" 		siteNumber="3" instrument="4145_3" channel="1"/>
+		<Connection pin="RF3" 		siteNumber="3" instrument="4145_3" channel="2"/>
+		<Connection pin="RF4" 		siteNumber="3" instrument="4145_3" channel="3"/>
+
+		<Connection pin="RFSwitch" 	siteNumber="0" instrument="4145_4" channel="0"/>
+		<Connection pin="RFSwitch" 	siteNumber="1" instrument="4145_4" channel="1"/>
+		<Connection pin="RFSwitch" 	siteNumber="2" instrument="4145_4" channel="2"/>
+		<Connection pin="RFSwitch" 	siteNumber="3" instrument="4145_4" channel="3"/>
+
+		<SystemConnection pin="RFSwitch_Vdd" instrument="4145_5" channel="0"/>
+		<SystemConnection pin="PD_SMU_AWG_5V" instrument="4145_5" channel="2"/>
+		<SystemConnection pin="SMU_PD_PU_5V" instrument="4145_5" channel="3"/>
+
+	</Connections>
+</PinMap>

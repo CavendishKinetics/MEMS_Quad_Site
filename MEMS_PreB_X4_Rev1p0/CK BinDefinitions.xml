@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--BinDefinitions	xmlns="http://www.ni.com/TestStand/SemiconductorModule/BinDefinitions"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		schemaVersion="1.0"-->
+<BinDefinitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/TestStand/SemiconductorModule/BinDefinitions" xmlns:bd="http://www.ni.com/TestStand/SemiconductorModule/BinDefinitions" schemaVersion="1.0" xsi:schemaLocation="http://www.ni.com/TestStand/SemiconductorModule/BinDefinitions C:/Program%20Files%20(x86)/National%20Instruments/TestStand%202012/Components/Schemas/NI_SemiconductorModule/BinDefinitions.xsd">		
+	<HardwareBins>
+		<Bin name="Pass" number="1" type="Pass"/>
+		<Bin name="Continuity" number="4" type="Fail"/>
+		<Bin name="Leakage" number="5" type="Fail"/>
+		<Bin name="Functional" number="6" type="Fail"/>
+		<Bin name="High Resistance" number="7" type="Fail"/>
+		<Bin name="Error" number="8" type="Other"/>
+		<Bin name="Stiction" number="9" type="Fail"/>
+	</HardwareBins>
+	<SoftwareBins errorBin="8" defaultPassBin="1" defaultFailBin="8">
+		<Bin name="Pass" number="1" hardwareBin="1"/>
+		<Bin name="Continuity" number="4" hardwareBin="4"/>
+		<Bin name="Error" number="8" hardwareBin="8"/>
+		<Bin name="HV" number="10" hardwareBin="6"/>
+		<Bin name="ReadBack" number="13" hardwareBin="6"/>
+		<Bin name="LeakageLowPower" number="14" hardwareBin="5"/>
+		<Bin name="LeakageActive" number="15" hardwareBin="5"/>
+		<Bin name="Idd_Regulation" number="16" hardwareBin="5"/>
+		<Bin name="Capacitance" number="20" hardwareBin="6"/>
+		<Bin name="Cmin" number="22" hardwareBin="6"/>
+		<Bin name="Cmax" number="23" hardwareBin="6"/>
+		<Bin name="DCIP3" number="25" hardwareBin="6"/>
+		<Bin name="Initial Stiction" number="26" hardwareBin="9"/>
+		<Bin name="Free Stiction" number="27" hardwareBin="9"/>
+		<Bin name="State Stiction" number="28" hardwareBin="9"/>
+		<Bin name="High Resistance" number="29" hardwareBin="7"/>
+		<Bin name="CPi10" number="31" hardwareBin="6"/>
+		<Bin name="CRl10" number="33" hardwareBin="6"/>
+		<Bin name="Resistance Growth" number="39" hardwareBin="7"/>
+		<Bin name="LinearityD" number="46" hardwareBin="6"/>
+		<Bin name="LinearityI" number="47" hardwareBin="6"/>
+		<Bin name="Latch" number="54" hardwareBin="6"/>
+	</SoftwareBins>
+</BinDefinitions>

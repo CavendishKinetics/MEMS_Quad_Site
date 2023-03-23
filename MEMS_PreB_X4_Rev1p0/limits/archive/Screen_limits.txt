@@ -1,0 +1,350 @@
+<SemiconductorModuleTests>																
+	<SequenceName>	<StepName>	<StepId>	<TestName>	<TestNumber>	<Pin>	<LowLimitExpression>	<HighLimitExpression>	<ComparisonType>	<ScalingFactor>	<Units>	<EvaluationType>	<FailBin>	<PublishedDataId>	<TestDataSource>	<ExportLocation>
+	MainSequence	R_Free_Initial	ID#:bYMqPAFcrESIQKj/JB+m6B	RF1_Free_Initial	1001		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free_Initial	ID#:bYMqPAFcrESIQKj/JB+m6B	RF2_Free_Initial	1002		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free_Initial	ID#:bYMqPAFcrESIQKj/JB+m6B	RF3_Free_Initial	1003		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free_Initial	ID#:bYMqPAFcrESIQKj/JB+m6B	RF4_Free_Initial	1004		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	C_Free_Initial	ID#:Ys6EUqu4eEaTX9q9tIX9MB	C_Free_Initial	1005	Cap1	0.7	1.1	GELE		pF	Numeric Limit	20	Capacitance		Locals.C_Free
+	MainSequence	C_Min	ID#:dAknKFGs5kKxZSEMgfBv+C	C_Min	1006	Cap1			LOG		pF	Numeric Limit	20	Capacitance		
+	MainSequence	R_On_R0	ID#:0vzkKJhNxkG7UcWKRvh0tC	R0_On_RF1	2001		0.5	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R0[0]
+	MainSequence	R_On_R0	ID#:0vzkKJhNxkG7UcWKRvh0tC	R0_On_RF2	2002		0.5	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R0[1]
+	MainSequence	R_On_R0	ID#:0vzkKJhNxkG7UcWKRvh0tC	R0_On_RF3	2003		0.5	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R0[2]
+	MainSequence	R_On_R0	ID#:0vzkKJhNxkG7UcWKRvh0tC	R0_On_RF4	2004		0.5	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R0[3]
+	MainSequence	C_Max	ID#:0t2k0exa0U6GdJZMncfztD	C_Max	2005	Cap1			LOG		pF	Numeric Limit	20	Capacitance		Locals.C_Max
+	MainSequence	C_Max	ID#:0t2k0exa0U6GdJZMncfztD	C_Range	2006		0.2	0.8	GELE		pF	Numeric Limit	20	Capacitance	Locals.C_Max -Locals.C_Free	
+	MainSequence	R_Free	ID#:gV9/6yw17kObQLOreUH2fB	RF1_Free	3001		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free	ID#:gV9/6yw17kObQLOreUH2fB	RF2_Free	3002		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free	ID#:gV9/6yw17kObQLOreUH2fB	RF3_Free	3003		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free	ID#:gV9/6yw17kObQLOreUH2fB	RF4_Free	3004		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	C_Free	ID#:pE010+CMmEGERj5VwYcqAC	C_Free	3005	Cap1	0.7	1.1	GELE		pF	Numeric Limit	20	Capacitance		Locals.C_Free
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	R10_On_RF1	4001		0.5	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R100k[0]
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	R10_On_RF2	4002		0.5	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R100k[1]
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	R10_On_RF3	4003		0.5	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R100k[2]
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	R10_On_RF4	4004		0.5	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R100k[3]
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	RF1_Rd	4005				LOG	m	ohms	Numeric Limit			Locals.R0[0]- Locals.R100K[0]	
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	RF2_Rd	4006				LOG	m	ohms	Numeric Limit			Locals.R0[1]- Locals.R100K[1]	
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	RF3_Rd	4007				LOG	m	ohms	Numeric Limit			Locals.R0[2]- Locals.R100K[2]	
+	MainSequence	R_On_R100K	ID#:xDbesDmbh0eb4fz3MW4NBB	RF4_Rd	4008				LOG	m	ohms	Numeric Limit			Locals.R0[3]- Locals.R100K[3]	
+	MainSequence	R_Free_BF	ID#:0hoSB65d00i6IwBlp6OBiA	RF1_Free_BF	4501		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free_BF	ID#:0hoSB65d00i6IwBlp6OBiA	RF2_Free_BF	4502		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free_BF	ID#:0hoSB65d00i6IwBlp6OBiA	RF3_Free_BF	4503		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free_BF	ID#:0hoSB65d00i6IwBlp6OBiA	RF4_Free_BF	4504		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	R_On_R39v	ID#:QOPr1FWdwE24kOP2ej762D	R39_On_RF1	4601		0.5	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R0[0]
+	MainSequence	R_On_R39v	ID#:QOPr1FWdwE24kOP2ej762D	R39_On_RF2	4602		0.5	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R0[1]
+	MainSequence	R_On_R39v	ID#:QOPr1FWdwE24kOP2ej762D	R39_On_RF3	4603		0.5	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R0[2]
+	MainSequence	R_On_R39v	ID#:QOPr1FWdwE24kOP2ej762D	R39_On_RF4	4604		0.5	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R0[3]
+	MainSequence	R_Free_Last	ID#:0n5s0CXOC0Clzn4NYGTLKD	RF1_Free_Last	4701		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free_Last	ID#:0n5s0CXOC0Clzn4NYGTLKD	RF2_Free_Last	4702		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free_Last	ID#:0n5s0CXOC0Clzn4NYGTLKD	RF3_Free_Last	4703		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free_Last	ID#:0n5s0CXOC0Clzn4NYGTLKD	RF4_Free_Last	4704		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_20	6001				LOG		Ohm	Numeric Limit		RF1_PI_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_21	6002				LOG		Ohm	Numeric Limit		RF1_PI_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_22	6003				LOG		Ohm	Numeric Limit		RF1_PI_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_23	6004				LOG		Ohm	Numeric Limit		RF1_PI_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_24	6005				LOG		Ohm	Numeric Limit		RF1_PI_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_25	6006				LOG		Ohm	Numeric Limit		RF1_PI_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_26	6007				LOG		Ohm	Numeric Limit		RF1_PI_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_27	6008				LOG		Ohm	Numeric Limit		RF1_PI_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_28	6009				LOG		Ohm	Numeric Limit		RF1_PI_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_29	6010				LOG		Ohm	Numeric Limit		RF1_PI_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_30	6011				LOG		Ohm	Numeric Limit		RF1_PI_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_31	6012				LOG		Ohm	Numeric Limit		RF1_PI_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_32	6013				LOG		Ohm	Numeric Limit		RF1_PI_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_33	6014				LOG		Ohm	Numeric Limit		RF1_PI_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_34	6015				LOG		Ohm	Numeric Limit		RF1_PI_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_35	6016				LOG		Ohm	Numeric Limit		RF1_PI_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_36	6017				LOG		Ohm	Numeric Limit		RF1_PI_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_37	6018				LOG		Ohm	Numeric Limit		RF1_PI_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_38	6019				LOG		Ohm	Numeric Limit		RF1_PI_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_39	6020				LOG		Ohm	Numeric Limit		RF1_PI_39		Locals.R1_R39
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_40	6021				LOG		Ohm	Numeric Limit		RF1_PI_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_PI_41	6022				LOG		Ohm	Numeric Limit		RF1_PI_41		Locals.R1_R41
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_40	6023				LOG		Ohm	Numeric Limit		RF1_RL_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_39	6024				LOG		Ohm	Numeric Limit		RF1_RL_39		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_38	6025				LOG		Ohm	Numeric Limit		RF1_RL_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_37	6026				LOG		Ohm	Numeric Limit		RF1_RL_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_36	6027				LOG		Ohm	Numeric Limit		RF1_RL_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_35	6028				LOG		Ohm	Numeric Limit		RF1_RL_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_34	6029				LOG		Ohm	Numeric Limit		RF1_RL_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_33	6030				LOG		Ohm	Numeric Limit		RF1_RL_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_32	6031				LOG		Ohm	Numeric Limit		RF1_RL_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_31	6032				LOG		Ohm	Numeric Limit		RF1_RL_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_30	6033				LOG		Ohm	Numeric Limit		RF1_RL_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_29	6034				LOG		Ohm	Numeric Limit		RF1_RL_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_28	6035				LOG		Ohm	Numeric Limit		RF1_RL_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_27	6036				LOG		Ohm	Numeric Limit		RF1_RL_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_26	6037				LOG		Ohm	Numeric Limit		RF1_RL_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_25	6038				LOG		Ohm	Numeric Limit		RF1_RL_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_24	6039				LOG		Ohm	Numeric Limit		RF1_RL_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_23	6040				LOG		Ohm	Numeric Limit		RF1_RL_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_22	6041				LOG		Ohm	Numeric Limit		RF1_RL_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_21	6042				LOG		Ohm	Numeric Limit		RF1_RL_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_RL_20	6043				LOG		Ohm	Numeric Limit		RF1_RL_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_Free_Last	6044				LOG		Ohm	Numeric Limit		RF1_RL_0		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_20	6045				LOG		Ohm	Numeric Limit		RF2_PI_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_21	6046				LOG		Ohm	Numeric Limit		RF2_PI_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_22	6047				LOG		Ohm	Numeric Limit		RF2_PI_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_23	6048				LOG		Ohm	Numeric Limit		RF2_PI_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_24	6049				LOG		Ohm	Numeric Limit		RF2_PI_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_25	6050				LOG		Ohm	Numeric Limit		RF2_PI_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_26	6051				LOG		Ohm	Numeric Limit		RF2_PI_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_27	6052				LOG		Ohm	Numeric Limit		RF2_PI_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_28	6053				LOG		Ohm	Numeric Limit		RF2_PI_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_29	6054				LOG		Ohm	Numeric Limit		RF2_PI_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_30	6055				LOG		Ohm	Numeric Limit		RF2_PI_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_31	6056				LOG		Ohm	Numeric Limit		RF2_PI_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_32	6057				LOG		Ohm	Numeric Limit		RF2_PI_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_33	6058				LOG		Ohm	Numeric Limit		RF2_PI_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_34	6059				LOG		Ohm	Numeric Limit		RF2_PI_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_35	6060				LOG		Ohm	Numeric Limit		RF2_PI_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_36	6061				LOG		Ohm	Numeric Limit		RF2_PI_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_37	6062				LOG		Ohm	Numeric Limit		RF2_PI_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_38	6063				LOG		Ohm	Numeric Limit		RF2_PI_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_39	6064				LOG		Ohm	Numeric Limit		RF2_PI_39		Locals.R2_R39
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_40	6065				LOG		Ohm	Numeric Limit		RF2_PI_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_PI_41	6066				LOG		Ohm	Numeric Limit		RF2_PI_41		Locals.R2_R41
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_40	6067				LOG		Ohm	Numeric Limit		RF2_RL_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_39	6068				LOG		Ohm	Numeric Limit		RF2_RL_39		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_38	6069				LOG		Ohm	Numeric Limit		RF2_RL_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_37	6070				LOG		Ohm	Numeric Limit		RF2_RL_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_36	6071				LOG		Ohm	Numeric Limit		RF2_RL_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_35	6072				LOG		Ohm	Numeric Limit		RF2_RL_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_34	6073				LOG		Ohm	Numeric Limit		RF2_RL_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_33	6074				LOG		Ohm	Numeric Limit		RF2_RL_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_32	6075				LOG		Ohm	Numeric Limit		RF2_RL_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_31	6076				LOG		Ohm	Numeric Limit		RF2_RL_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_30	6077				LOG		Ohm	Numeric Limit		RF2_RL_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_29	6078				LOG		Ohm	Numeric Limit		RF2_RL_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_28	6079				LOG		Ohm	Numeric Limit		RF2_RL_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_27	6080				LOG		Ohm	Numeric Limit		RF2_RL_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_26	6081				LOG		Ohm	Numeric Limit		RF2_RL_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_25	6082				LOG		Ohm	Numeric Limit		RF2_RL_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_24	6083				LOG		Ohm	Numeric Limit		RF2_RL_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_23	6084				LOG		Ohm	Numeric Limit		RF2_RL_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_22	6085				LOG		Ohm	Numeric Limit		RF2_RL_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_21	6086				LOG		Ohm	Numeric Limit		RF2_RL_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_RL_20	6087				LOG		Ohm	Numeric Limit		RF2_RL_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_Free_Last	6088				LOG		Ohm	Numeric Limit		RF2_RL_0		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_20	6089				LOG		Ohm	Numeric Limit		RF3_PI_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_21	6090				LOG		Ohm	Numeric Limit		RF3_PI_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_22	6091				LOG		Ohm	Numeric Limit		RF3_PI_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_23	6092				LOG		Ohm	Numeric Limit		RF3_PI_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_24	6093				LOG		Ohm	Numeric Limit		RF3_PI_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_25	6094				LOG		Ohm	Numeric Limit		RF3_PI_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_26	6095				LOG		Ohm	Numeric Limit		RF3_PI_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_27	6096				LOG		Ohm	Numeric Limit		RF3_PI_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_28	6097				LOG		Ohm	Numeric Limit		RF3_PI_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_29	6098				LOG		Ohm	Numeric Limit		RF3_PI_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_30	6099				LOG		Ohm	Numeric Limit		RF3_PI_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_31	6100				LOG		Ohm	Numeric Limit		RF3_PI_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_32	6101				LOG		Ohm	Numeric Limit		RF3_PI_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_33	6102				LOG		Ohm	Numeric Limit		RF3_PI_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_34	6103				LOG		Ohm	Numeric Limit		RF3_PI_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_35	6104				LOG		Ohm	Numeric Limit		RF3_PI_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_36	6105				LOG		Ohm	Numeric Limit		RF3_PI_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_37	6106				LOG		Ohm	Numeric Limit		RF3_PI_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_38	6107				LOG		Ohm	Numeric Limit		RF3_PI_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_39	6108				LOG		Ohm	Numeric Limit		RF3_PI_39		Locals.R3_R39
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_40	6109				LOG		Ohm	Numeric Limit		RF3_PI_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_PI_41	6110				LOG		Ohm	Numeric Limit		RF3_PI_41		Locals.R3_R41
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_40	6111				LOG		Ohm	Numeric Limit		RF3_RL_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_39	6112				LOG		Ohm	Numeric Limit		RF3_RL_39		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_38	6113				LOG		Ohm	Numeric Limit		RF3_RL_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_37	6114				LOG		Ohm	Numeric Limit		RF3_RL_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_36	6115				LOG		Ohm	Numeric Limit		RF3_RL_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_35	6116				LOG		Ohm	Numeric Limit		RF3_RL_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_34	6117				LOG		Ohm	Numeric Limit		RF3_RL_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_33	6118				LOG		Ohm	Numeric Limit		RF3_RL_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_32	6119				LOG		Ohm	Numeric Limit		RF3_RL_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_31	6120				LOG		Ohm	Numeric Limit		RF3_RL_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_30	6121				LOG		Ohm	Numeric Limit		RF3_RL_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_29	6122				LOG		Ohm	Numeric Limit		RF3_RL_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_28	6123				LOG		Ohm	Numeric Limit		RF3_RL_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_27	6124				LOG		Ohm	Numeric Limit		RF3_RL_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_26	6125				LOG		Ohm	Numeric Limit		RF3_RL_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_25	6126				LOG		Ohm	Numeric Limit		RF3_RL_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_24	6127				LOG		Ohm	Numeric Limit		RF3_RL_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_23	6128				LOG		Ohm	Numeric Limit		RF3_RL_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_22	6129				LOG		Ohm	Numeric Limit		RF3_RL_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_21	6130				LOG		Ohm	Numeric Limit		RF3_RL_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_RL_20	6131				LOG		Ohm	Numeric Limit		RF3_RL_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_Free_Last	6132				LOG		Ohm	Numeric Limit		RF3_RL_0		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_20	6133				LOG		Ohm	Numeric Limit		RF4_PI_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_21	6134				LOG		Ohm	Numeric Limit		RF4_PI_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_22	6135				LOG		Ohm	Numeric Limit		RF4_PI_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_23	6136				LOG		Ohm	Numeric Limit		RF4_PI_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_24	6137				LOG		Ohm	Numeric Limit		RF4_PI_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_25	6138				LOG		Ohm	Numeric Limit		RF4_PI_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_26	6139				LOG		Ohm	Numeric Limit		RF4_PI_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_27	6140				LOG		Ohm	Numeric Limit		RF4_PI_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_28	6141				LOG		Ohm	Numeric Limit		RF4_PI_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_29	6142				LOG		Ohm	Numeric Limit		RF4_PI_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_30	6143				LOG		Ohm	Numeric Limit		RF4_PI_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_31	6144				LOG		Ohm	Numeric Limit		RF4_PI_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_32	6145				LOG		Ohm	Numeric Limit		RF4_PI_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_33	6146				LOG		Ohm	Numeric Limit		RF4_PI_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_34	6147				LOG		Ohm	Numeric Limit		RF4_PI_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_35	6148				LOG		Ohm	Numeric Limit		RF4_PI_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_36	6149				LOG		Ohm	Numeric Limit		RF4_PI_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_37	6150				LOG		Ohm	Numeric Limit		RF4_PI_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_38	6151				LOG		Ohm	Numeric Limit		RF4_PI_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_39	6152				LOG		Ohm	Numeric Limit		RF4_PI_39		Locals.R4_R39
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_40	6153				LOG		Ohm	Numeric Limit		RF4_PI_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_PI_41	6154				LOG		Ohm	Numeric Limit		RF4_PI_41		Locals.R4_R41
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_40	6155				LOG		Ohm	Numeric Limit		RF4_RL_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_39	6156				LOG		Ohm	Numeric Limit		RF4_RL_39		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_38	6157				LOG		Ohm	Numeric Limit		RF4_RL_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_37	6158				LOG		Ohm	Numeric Limit		RF4_RL_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_36	6159				LOG		Ohm	Numeric Limit		RF4_RL_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_35	6160				LOG		Ohm	Numeric Limit		RF4_RL_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_34	6161				LOG		Ohm	Numeric Limit		RF4_RL_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_33	6162				LOG		Ohm	Numeric Limit		RF4_RL_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_32	6163				LOG		Ohm	Numeric Limit		RF4_RL_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_31	6164				LOG		Ohm	Numeric Limit		RF4_RL_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_30	6165				LOG		Ohm	Numeric Limit		RF4_RL_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_29	6166				LOG		Ohm	Numeric Limit		RF4_RL_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_28	6167				LOG		Ohm	Numeric Limit		RF4_RL_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_27	6168				LOG		Ohm	Numeric Limit		RF4_RL_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_26	6169				LOG		Ohm	Numeric Limit		RF4_RL_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_25	6170				LOG		Ohm	Numeric Limit		RF4_RL_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_24	6171				LOG		Ohm	Numeric Limit		RF4_RL_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_23	6172				LOG		Ohm	Numeric Limit		RF4_RL_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_22	6173				LOG		Ohm	Numeric Limit		RF4_RL_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_21	6174				LOG		Ohm	Numeric Limit		RF4_RL_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_RL_20	6175				LOG		Ohm	Numeric Limit		RF4_RL_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_Free_Last	6176				LOG		Ohm	Numeric Limit		RF4_RL_0		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_VPI	6177				LOG		V	Numeric Limit		RF1_VPI0		Locals.R1_VPI
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_VRL	6178				LOG		V	Numeric Limit		RF1_VRL0		Locals.R1_VRL
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_VPI1	6179				LOG		V	Numeric Limit		RF1_VPI1		Locals.R1_VPI1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1_VRL1	6180				LOG		V	Numeric Limit		RF1_VRL1		Locals.R1_VRL1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_VPI	6181				LOG		V	Numeric Limit		RF2_VPI0		Locals.R2_VPI
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_VRL	6182				LOG		V	Numeric Limit		RF2_VRL0		Locals.R2_VRL
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_VPI1	6183				LOG		V	Numeric Limit		RF2_VPI1		Locals.R2_VPI1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2_VRL1	6184				LOG		V	Numeric Limit		RF2_VRL1		Locals.R2_VRL1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_VPI	6185				LOG		V	Numeric Limit		RF3_VPI0		Locals.R3_VPI
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_VRL	6186				LOG		V	Numeric Limit		RF3_VRL0		Locals.R3_VRL
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_VPI1	6187				LOG		V	Numeric Limit		RF3_VPI1		Locals.R3_VPI1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3_VRL1	6188				LOG		V	Numeric Limit		RF3_VRL1		Locals.R3_VRL1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_VPI	6189				LOG		V	Numeric Limit		RF4_VPI0		Locals.R4_VPI
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_VRL	6190				LOG		V	Numeric Limit		RF4_VRL0		Locals.R4_VRL
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_VPI1	6191				LOG		V	Numeric Limit		RF4_VPI1		Locals.R4_VPI1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4_VRL1	6192				LOG		V	Numeric Limit		RF4_VRL1		Locals.R4_VRL1
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR1_PI	6193				LOG		V	Numeric Limit			Locals.R1_VPI1-Locals.R1_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR1_RL	6194				LOG		V	Numeric Limit			Locals.R1_VRL1-Locals.R1_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR2_PI	6195				LOG		V	Numeric Limit			Locals.R2_VPI1-Locals.R2_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR2_RL	6196				LOG		V	Numeric Limit			Locals.R2_VRL1-Locals.R2_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR3_PI	6197				LOG		V	Numeric Limit			Locals.R3_VPI1-Locals.R3_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR3_RL	6198				LOG		V	Numeric Limit			Locals.R3_VRL1-Locals.R3_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR4_PI	6199				LOG		V	Numeric Limit			Locals.R4_VPI1-Locals.R4_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	DVR4_RL	6200				LOG		V	Numeric Limit			Locals.R4_VRL1-Locals.R4_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1hyst	6201				LOG		V	Numeric Limit			Locals.R1_VPI - Locals.R1_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R1sat	6202				LOG	m	Ohm	Numeric Limit			Locals.R1_R41 - Locals.R1_R39 	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2hyst	6203				LOG		V	Numeric Limit			Locals.R2_VPI - Locals.R2_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R2sat	6204				LOG	m	Ohm	Numeric Limit			Locals.R2_R41 - Locals.R2_R39 	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3hyst	6205				LOG		V	Numeric Limit			Locals.R3_VPI - Locals.R3_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R3sat	6206				LOG	m	Ohm	Numeric Limit			Locals.R3_R41 - Locals.R3_R39 	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4hyst	6207				LOG		V	Numeric Limit			Locals.R4_VPI - Locals.R4_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	R4sat	6208				LOG	m	Ohm	Numeric Limit			Locals.R4_R41 - Locals.R4_R39 	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_20	6209	Cap1			LOG		pF	Numeric Limit		C_PI_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_21	6210	Cap1			LOG		pF	Numeric Limit		C_PI_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_22	6211	Cap1			LOG		pF	Numeric Limit		C_PI_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_23	6212	Cap1			LOG		pF	Numeric Limit		C_PI_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_24	6213	Cap1			LOG		pF	Numeric Limit		C_PI_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_25	6214	Cap1			LOG		pF	Numeric Limit		C_PI_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_26	6215	Cap1			LOG		pF	Numeric Limit		C_PI_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_27	6216	Cap1			LOG		pF	Numeric Limit		C_PI_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_28	6217	Cap1			LOG		pF	Numeric Limit		C_PI_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_29	6218	Cap1			LOG		pF	Numeric Limit		C_PI_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_30	6219	Cap1			LOG		pF	Numeric Limit		C_PI_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_31	6220	Cap1			LOG		pF	Numeric Limit		C_PI_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_32	6221	Cap1			LOG		pF	Numeric Limit		C_PI_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_33	6222	Cap1			LOG		pF	Numeric Limit		C_PI_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_34	6223	Cap1			LOG		pF	Numeric Limit		C_PI_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_35	6224	Cap1			LOG		pF	Numeric Limit		C_PI_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_36	6225	Cap1			LOG		pF	Numeric Limit		C_PI_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_37	6226	Cap1			LOG		pF	Numeric Limit		C_PI_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_38	6227	Cap1			LOG		pF	Numeric Limit		C_PI_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_39	6228	Cap1			LOG		pF	Numeric Limit		C_PI_39		Locals.C39
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_40	6229	Cap1			LOG		pF	Numeric Limit		C_PI_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_PI_41	6230	Cap1			LOG		pF	Numeric Limit		C_PI_41		Locals.C41
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_40	6231	Cap1			LOG		pF	Numeric Limit		C_RL_40		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_39	6232	Cap1			LOG		pF	Numeric Limit		C_RL_39		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_38	6233	Cap1			LOG		pF	Numeric Limit		C_RL_38		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_37	6234	Cap1			LOG		pF	Numeric Limit		C_RL_37		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_36	6235	Cap1			LOG		pF	Numeric Limit		C_RL_36		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_35	6236	Cap1			LOG		pF	Numeric Limit		C_RL_35		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_34	6237	Cap1			LOG		pF	Numeric Limit		C_RL_34		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_33	6238	Cap1			LOG		pF	Numeric Limit		C_RL_33		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_32	6239	Cap1			LOG		pF	Numeric Limit		C_RL_32		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_31	6240	Cap1			LOG		pF	Numeric Limit		C_RL_31		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_30	6241	Cap1			LOG		pF	Numeric Limit		C_RL_30		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_29	6242	Cap1			LOG		pF	Numeric Limit		C_RL_29		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_28	6243	Cap1			LOG		pF	Numeric Limit		C_RL_28		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_27	6244	Cap1			LOG		pF	Numeric Limit		C_RL_27		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_26	6245	Cap1			LOG		pF	Numeric Limit		C_RL_26		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_25	6246	Cap1			LOG		pF	Numeric Limit		C_RL_25		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_24	6247	Cap1			LOG		pF	Numeric Limit		C_RL_24		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_23	6248	Cap1			LOG		pF	Numeric Limit		C_RL_23		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_22	6249	Cap1			LOG		pF	Numeric Limit		C_RL_22		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_21	6250	Cap1			LOG		pF	Numeric Limit		C_RL_21		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_RL_20	6251	Cap1			LOG		pF	Numeric Limit		C_RL_20		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_Free_Last	6252	Cap1			LOG		pF	Numeric Limit	20	C_RL_0		
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_VPI	6253	Cap1			LOG		V	Numeric Limit		C_VPI		Locals.C_VPI
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	C_VRL	6254	Cap1			LOG		V	Numeric Limit		C_VRL		Locals.C_VRL
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	Chyst	6255				LOG		V	Numeric Limit			Locals.C_VPI - Locals.C_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	Csat	6256				LOG	m	pF	Numeric Limit			Locals.C41 - Locals.C39	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T1N4A_PI	6257				LOG		V	Numeric Limit			Locals.R1_VPI - Locals.C_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T1N4A_RL	6258				LOG		V	Numeric Limit			Locals.R1_VRL - Locals.C_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T2N4A_PI	6259				LOG		V	Numeric Limit			Locals.R2_VPI - Locals.C_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T2N4A_RL	6260				LOG		V	Numeric Limit			Locals.R2_VRL - Locals.C_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T3N4A_PI	6261				LOG		V	Numeric Limit			Locals.R3_VPI - Locals.C_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T3N4A_RL	6262				LOG		V	Numeric Limit			Locals.R3_VRL - Locals.C_VRL	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T4N4A_PI	6263				LOG		V	Numeric Limit			Locals.R4_VPI - Locals.C_VPI	
+	MainSequence	BFDown SMU Min	ID#:TH90eKOwvUeHfgmhwBu4FB	T4N4A_RL	6264				LOG		V	Numeric Limit			Locals.R4_VRL - Locals.C_VRL	
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_25	7001	Cap1			LOG		pF	Numeric Limit		C_PI_25		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_26	7002	Cap1			LOG		pF	Numeric Limit		C_PI_26		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_27	7003	Cap1			LOG		pF	Numeric Limit		C_PI_27		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_28	7004	Cap1			LOG		pF	Numeric Limit		C_PI_28		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_29	7005	Cap1			LOG		pF	Numeric Limit		C_PI_29		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_30	7006	Cap1			LOG		pF	Numeric Limit		C_PI_30		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_31	7007	Cap1			LOG		pF	Numeric Limit		C_PI_31		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_32	7008	Cap1			LOG		pF	Numeric Limit		C_PI_32		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_33	7009	Cap1			LOG		pF	Numeric Limit		C_PI_33		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_34	7010	Cap1			LOG		pF	Numeric Limit		C_PI_34		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_35	7011	Cap1			LOG		pF	Numeric Limit		C_PI_35		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_36	7012	Cap1			LOG		pF	Numeric Limit		C_PI_36		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_37	7013	Cap1			LOG		pF	Numeric Limit		C_PI_37		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_38	7014	Cap1			LOG		pF	Numeric Limit		C_PI_38		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_39	7015	Cap1			LOG		pF	Numeric Limit		C_PI_39		Locals.C39
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_40	7016	Cap1			LOG		pF	Numeric Limit		C_PI_40		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_41	7017	Cap1			LOG		pF	Numeric Limit		C_PI_41		Locals.C41
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_42	7018	Cap1			LOG		pF	Numeric Limit		C_PI_42		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_43	7019	Cap1			LOG		pF	Numeric Limit		C_PI_43		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_44	7020	Cap1			LOG		pF	Numeric Limit		C_PI_44		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_PI_45	7021	Cap1			LOG		pF	Numeric Limit		C_PI_45		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_44	7022	Cap1			LOG		pF	Numeric Limit		C_RL_44		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_43	7023	Cap1			LOG		pF	Numeric Limit		C_RL_43		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_42	7024	Cap1			LOG		pF	Numeric Limit		C_RL_42		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_41	7025	Cap1			LOG		pF	Numeric Limit		C_RL_41		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_40	7026	Cap1			LOG		pF	Numeric Limit		C_RL_40		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_39	7027	Cap1			LOG		pF	Numeric Limit		C_RL_39		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_38	7028	Cap1			LOG		pF	Numeric Limit		C_RL_38		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_37	7029	Cap1			LOG		pF	Numeric Limit		C_RL_37		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_36	7030	Cap1			LOG		pF	Numeric Limit		C_RL_36		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_35	7031	Cap1			LOG		pF	Numeric Limit		C_RL_35		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_34	7032	Cap1			LOG		pF	Numeric Limit		C_RL_34		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_33	7033	Cap1			LOG		pF	Numeric Limit		C_RL_33		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_32	7034	Cap1			LOG		pF	Numeric Limit		C_RL_32		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_31	7035	Cap1			LOG		pF	Numeric Limit		C_RL_31		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_30	7036	Cap1			LOG		pF	Numeric Limit		C_RL_30		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_29	7037	Cap1			LOG		pF	Numeric Limit		C_RL_29		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_28	7038	Cap1			LOG		pF	Numeric Limit		C_RL_28		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_27	7039	Cap1			LOG		pF	Numeric Limit		C_RL_27		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_26	7040	Cap1			LOG		pF	Numeric Limit		C_RL_26		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_RL_25	7041	Cap1			LOG		pF	Numeric Limit		C_RL_25		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_Free_Last	7044	Cap1			LOG		pF	Numeric Limit	20	C_RL_0		
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_VPI	7045	Cap1			LOG		V	Numeric Limit		C_VPI		Locals.C_VPI
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_C_VRL	7046	Cap1			LOG		V	Numeric Limit		C_VRL		Locals.C_VRL
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_Chyst	7047				LOG		V	Numeric Limit			Locals.C_VPI - Locals.C_VRL	
+	MainSequence	BFUp SMU	ID#:C42Il5ZKZkabLNGGYilNoA	T_Csat	7048				LOG	m	pF	Numeric Limit			Locals.C41 - Locals.C39	
+</SemiconductorModuleTests>																

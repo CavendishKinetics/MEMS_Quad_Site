@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:pm="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" schemaVersion="1.0" xsi:schemaLocation="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd C:/Program%20Files%20(x86)/National%20Instruments/TestStand%202012/Components/Schemas/NI_SemiconductorModule/PinMap.xsd">
+	<Pins>
+		<DUTPin name="Cap1_S0"/>
+		<DUTPin name="Cap1_S1"/>
+		<DUTPin name="Cap1_S2"/>
+		<DUTPin name="Cap1_S3"/>
+		<DUTPin name="RFSwitch_S0"/>
+		<DUTPin name="RFSwitch_S1"/>
+		<DUTPin name="RFSwitch_S2"/>
+		<DUTPin name="RFSwitch_S3"/>
+		<DUTPin name="RFSwitch_Vdd"/>
+		
+		<DUTPin name="RF1_S0"/>
+		<DUTPin name="RF2_S0"/>
+		<DUTPin name="RF3_S0"/>
+		<DUTPin name="RF4_S0"/>
+		
+		<DUTPin name="RF1_S1"/>
+		<DUTPin name="RF2_S1"/>
+		<DUTPin name="RF3_S1"/>
+		<DUTPin name="RF4_S1"/>
+		
+		<DUTPin name="RF1_S2"/>
+		<DUTPin name="RF2_S2"/>
+		<DUTPin name="RF3_S2"/>
+		<DUTPin name="RF4_S2"/>
+		
+		<DUTPin name="RF1_S3"/>
+		<DUTPin name="RF2_S3"/>
+		<DUTPin name="RF3_S3"/>
+		<DUTPin name="RF4_S3"/>
+	</Pins>
+	
+	<Instruments>
+		<NIDCPowerInstrument name="4145_0" numberOfChannels="4"/> <!-- Site 0 -->
+		<NIDCPowerInstrument name="4145_1" numberOfChannels="4"/> <!-- Site 1 -->
+		<NIDCPowerInstrument name="4145_2" numberOfChannels="4"/> <!-- Site 2 -->
+		<NIDCPowerInstrument name="4145_3" numberOfChannels="4"/> <!-- Site 3 -->
+		<Instrument name="5632_0" instrumentTypeId="VNA">
+			<ChannelGroup id="allChannels">
+				<Channel id="port1"/>
+				<Channel id="port2"/>
+			</ChannelGroup>
+		</Instrument>
+		<Instrument name="5632_1" instrumentTypeId="VNA">
+			<ChannelGroup id="allChannels">
+				<Channel id="port1"/>
+				<Channel id="port2"/>
+			</ChannelGroup>
+		</Instrument>
+		<NIDCPowerInstrument name="4145_4" numberOfChannels="4"/>
+		<NIDCPowerInstrument name="4145_5" numberOfChannels="4"/>
+	</Instruments>
+	
+	<Sites>
+		<Site siteNumber="0"/>
+	</Sites>
+	
+	<Connections>
+		<Connection pin="RF1_S0" 		siteNumber="0" instrument="4145_0" channel="0"/>
+		<Connection pin="RF2_S0" 		siteNumber="0" instrument="4145_0" channel="1"/>
+		<Connection pin="RF3_S0" 		siteNumber="0" instrument="4145_0" channel="2"/>
+		<Connection pin="RF4_S0" 		siteNumber="0" instrument="4145_0" channel="3"/>
+
+		<Connection pin="RF1_S1" 		siteNumber="0" instrument="4145_1" channel="0"/>
+		<Connection pin="RF2_S1" 		siteNumber="0" instrument="4145_1" channel="1"/>
+		<Connection pin="RF3_S1" 		siteNumber="0" instrument="4145_1" channel="2"/>
+		<Connection pin="RF4_S1" 		siteNumber="0" instrument="4145_1" channel="3"/>
+
+		<Connection pin="RF1_S2" 		siteNumber="0" instrument="4145_2" channel="0"/>
+		<Connection pin="RF2_S2" 		siteNumber="0" instrument="4145_2" channel="1"/>
+		<Connection pin="RF3_S2" 		siteNumber="0" instrument="4145_2" channel="2"/>
+		<Connection pin="RF4_S2" 		siteNumber="0" instrument="4145_2" channel="3"/>
+
+		<Connection pin="RF1_S3" 		siteNumber="0" instrument="4145_3" channel="0"/>
+		<Connection pin="RF2_S3" 		siteNumber="0" instrument="4145_3" channel="1"/>
+		<Connection pin="RF3_S3" 		siteNumber="0" instrument="4145_3" channel="2"/>
+		<Connection pin="RF4_S3" 		siteNumber="0" instrument="4145_3" channel="3"/>
+
+		<Connection pin="Cap1_S0" 		siteNumber="0" instrument="5632_0" channel="port1"/>
+		<Connection pin="Cap1_S1" 		siteNumber="0" instrument="5632_0" channel="port2"/>
+		<Connection pin="Cap1_S2" 		siteNumber="0" instrument="5632_1" channel="port1"/>
+		<Connection pin="Cap1_S3" 		siteNumber="0" instrument="5632_1" channel="port2"/>
+
+		<Connection pin="RFSwitch_S0" 	siteNumber="0" instrument="4145_4" channel="0"/>
+		<Connection pin="RFSwitch_S1" 	siteNumber="0" instrument="4145_4" channel="1"/>
+		<Connection pin="RFSwitch_S2" 	siteNumber="0" instrument="4145_4" channel="2"/>
+		<Connection pin="RFSwitch_S3" 	siteNumber="0" instrument="4145_4" channel="3"/>
+
+		<Connection pin="RFSwitch_Vdd" 	siteNumber="0"  instrument="4145_5" channel="0"/>
+	</Connections>
+</PinMap>
