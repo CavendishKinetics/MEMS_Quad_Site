@@ -1,6 +1,7 @@
 # WaveformName	RampStartVoltageValue	RampEndVoltageValue	DurationValue
 BRise39v20u	0	39	20e-6
-BRise49v20u	0	49	20e-6
+BFall39v2u	39	0	2e-6
 BRise59v20u	0	59	20e-6
-BRise41v20u	0	41	20e-6
 BFall0v2u	39	0	2e-6
+BRise41v20u	0	41	20e-6
+BFall41v2u	41	0	2e-6

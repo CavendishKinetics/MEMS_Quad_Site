@@ -3,4 +3,10 @@
 # Since this file is loaded for both channels, provide your length values twice the desired values.
 # WaveformName	DCVoltageValue	DurationValue(X2)
 AllLow	0	4.2e-6
-AllLow10u	0	10e-6
+AllLow1u	0	2e-6
+AllLow2u	0	4.2e-6
+AllLow10u	0	20e-6
+AllLow18u	0	36.1e-6
+AllLow33u	0	66.2e-6
+AllLow48u	0	96.1e-6
+AllLow50u	0	100e-6

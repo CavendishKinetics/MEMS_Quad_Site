@@ -1,1 +1,3 @@
 # WaveformName	RampStartVoltageValue	RampEndVoltageValue	DurationValue
+TRise41v20u	0	41	20e-6
+TFall41v2u	41	0	2e-6
