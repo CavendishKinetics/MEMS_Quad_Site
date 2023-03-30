@@ -1,8 +1,4 @@
 # WaveformName	DCVoltageValue	DurationValue
-BHi39v28u	0	28e-6
-BRise39v20u	0	20e-6
-BFall39v2u	0	2e-6
-BRise41v20u	0	20e-6
-BHi41v28u	0	28e-6
-THi41v28u	41	28e-6
 BHi59v28u	0	28e-6
+BHi39v28u	0	28e-6
+THi41v28u	41	28e-6
