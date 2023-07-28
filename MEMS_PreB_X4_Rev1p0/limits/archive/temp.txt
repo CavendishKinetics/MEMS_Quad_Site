@@ -1,42 +1,35 @@
 <SemiconductorModuleTests>																
 	<SequenceName>	<StepName>	<StepId>	<TestName>	<TestNumber>	<Pin>	<LowLimitExpression>	<HighLimitExpression>	<ComparisonType>	<ScalingFactor>	<Units>	<EvaluationType>	<FailBin>	<PublishedDataId>	<TestDataSource>	<ExportLocation>
-	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF1_Free_Initial	1001		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
-	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF2_Free_Initial	1002		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
-	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF3_Free_Initial	1003		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
-	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF4_Free_Initial	1004		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
-	MainSequence	C_Free_Initial	ID#:WTGO1HrDl0KvLCVce1vAEC	C_Free_Initial	1005	Cap1	0.7	1.1	GELE		pF	Numeric Limit	20	Capacitance		Locals.C_Free
-	MainSequence	C_Min	ID#:CyupsbiGEkO3Kp0smpLdNA	C_Min	1006	Cap1			LOG		pF	Numeric Limit	20	Capacitance		
-	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF1	2001		0.5	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R0[0]
-	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF2	2002		0.5	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R0[1]
-	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF3	2003		0.5	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R0[2]
-	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF4	2004		0.5	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R0[3]
-	MainSequence	C_Max	ID#:OaROO0KK6kmdl1WVY3lFaC	C_Max	2005	Cap1			LOG		pF	Numeric Limit	20	Capacitance		Locals.C_Max
-	MainSequence	C_Max	ID#:OaROO0KK6kmdl1WVY3lFaC	C_Range	2006		0.2	0.8	GELE		pF	Numeric Limit	20	Capacitance	Locals.C_Max -Locals.C_Free	
-	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF1_Free	3001		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
-	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF2_Free	3002		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
-	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF3_Free	3003		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
-	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF4_Free	3004		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
-	MainSequence	C_Free	ID#:XfnJF+0kc0q6SrVz4XYyvC	C_Free	3005	Cap1	0.7	1.1	GELE		pF	Numeric Limit	20	Capacitance		Locals.C_Free
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF1	4001		0.5	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R100k[0]
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF2	4002		0.5	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R100k[1]
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF3	4003		0.5	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R100k[2]
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF4	4004		0.5	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R100k[3]
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF1_Rd	4005				LOG	m	ohms	Numeric Limit			Locals.R100K[0]-Locals.R0[0]	
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF2_Rd	4006				LOG	m	ohms	Numeric Limit			Locals.R100K[1]-Locals.R0[1]	
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF3_Rd	4007				LOG	m	ohms	Numeric Limit			Locals.R100K[2]-Locals.R0[2]	
-	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF4_Rd	4008				LOG	m	ohms	Numeric Limit			Locals.R100K[3]-Locals.R0[3]	
-	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF1_Free_BF	4501		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
-	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF2_Free_BF	4502		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
-	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF3_Free_BF	4503		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
-	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF4_Free_BF	4504		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
-	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF1	4601		0.5	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R0[0]
-	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF2	4602		0.5	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R0[1]
-	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF3	4603		0.5	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R0[2]
-	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF4	4604		0.5	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R0[3]
-	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF1_Free_Last	4701		2	3.5	GELE	M	ohms	Numeric Limit	26	RF1_Free		
-	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF2_Free_Last	4702		2	3.5	GELE	M	ohms	Numeric Limit	26	RF2_Free		
-	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF3_Free_Last	4703		2	3.5	GELE	M	ohms	Numeric Limit	26	RF3_Free		
-	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF4_Free_Last	4704		2	3.5	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF1_Free_Initial	1001		2	4	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF2_Free_Initial	1002		2	4	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF3_Free_Initial	1003		2	4	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free_Initial	ID#:Giibn1b2CUukYY+rINFhqB	RF4_Free_Initial	1004		2	4	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	C_Free_Initial	ID#:WTGO1HrDl0KvLCVce1vAEC	C_Free_Initial	1005	Cap1	0.5	1.5	GELE		pF	Numeric Limit	20	Capacitance		Locals.C_Free
+	MainSequence	C_Min	ID#:CyupsbiGEkO3Kp0smpLdNA	C_Min	1006	Cap1			LOG		pF	Numeric Limit		Capacitance		
+	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF1	2001		0.2	2	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R0[0]
+	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF2	2002		0.2	2	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R0[1]
+	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF3	2003		0.2	2	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R0[2]
+	MainSequence	R_On_R0	ID#:tULzm/LKA0iY4SBFiHhVnA	R0_On_RF4	2004		0.2	2	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R0[3]
+	MainSequence	C_Max	ID#:OaROO0KK6kmdl1WVY3lFaC	C_Max	2005	Cap1			LOG		pF	Numeric Limit		Capacitance		Locals.C_Max
+	MainSequence	C_Max	ID#:OaROO0KK6kmdl1WVY3lFaC	C_Range	2006		0.1	0.4	GELE			Numeric Limit			Locals.C_Max -Locals.C_Free	
+	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF1_Free	3001		2	4	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF2_Free	3002		2	4	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF3_Free	3003		2	4	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free	ID#:pFu3i5cOy0CAynBEO54ZSA	RF4_Free	3004		2	4	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	C_Free	ID#:XfnJF+0kc0q6SrVz4XYyvC	C_Free	3005	Cap1	0.5	1.5	GELE		pF	Numeric Limit	20	Capacitance		Locals.C_Free
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF1	4001		0.4	0.8	GELE		ohms	Numeric Limit	29	RF1_On		Locals.R100k[0]
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF2	4002		0.4	0.8	GELE		ohms	Numeric Limit	29	RF2_On		Locals.R100k[1]
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF3	4003		0.4	0.8	GELE		ohms	Numeric Limit	29	RF3_On		Locals.R100k[2]
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	R10_On_RF4	4004		0.4	0.8	GELE		ohms	Numeric Limit	29	RF4_On		Locals.R100k[3]
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF1_Rd	4005				LOG			Numeric Limit			Locals.R100K[0]-Locals.R0[0]	
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF2_Rd	4006				LOG			Numeric Limit			Locals.R100K[1]-Locals.R0[1]	
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF3_Rd	4007				LOG			Numeric Limit			Locals.R100K[2]-Locals.R0[2]	
+	MainSequence	R_On_R100K	ID#:pfKFNmPhWkGuba50i2qLHB	RF4_Rd	4008				LOG			Numeric Limit			Locals.R100K[3]-Locals.R0[3]	
+	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF1_Free_BF	4501		2	4	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF2_Free_BF	4502		2	4	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF3_Free_BF	4503		2	4	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free_BF	ID#:f/uxKs9takWOz0KeHjz5UC	RF4_Free_BF	4504		2	4	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	MainSequence	Configure SMU - RFPins	ID#:AAF42Ywa6kKP4eFBlnQtMD		No Tests											
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	R1_PI_20	6001				LOG		Ohm	Numeric Limit		RF1_PI_20		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	R1_PI_21	6002				LOG		Ohm	Numeric Limit		RF1_PI_21		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	R1_PI_22	6003				LOG		Ohm	Numeric Limit		RF1_PI_22		
@@ -264,9 +257,9 @@
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_36	6225	Cap1			LOG		pF	Numeric Limit		C_PI_36		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_37	6226	Cap1			LOG		pF	Numeric Limit		C_PI_37		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_38	6227	Cap1			LOG		pF	Numeric Limit		C_PI_38		
-	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_39	6228	Cap1			LOG		pF	Numeric Limit		C_PI_39		Locals.C39
+	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_39	6228	Cap1			LOG		pF	Numeric Limit		C_PI_39		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_40	6229	Cap1			LOG		pF	Numeric Limit		C_PI_40		
-	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_41	6230	Cap1			LOG		pF	Numeric Limit		C_PI_41		Locals.C41
+	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_PI_41	6230	Cap1			LOG		pF	Numeric Limit		C_PI_41		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_RL_40	6231	Cap1			LOG		pF	Numeric Limit		C_RL_40		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_RL_39	6232	Cap1			LOG		pF	Numeric Limit		C_RL_39		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_RL_38	6233	Cap1			LOG		pF	Numeric Limit		C_RL_38		
@@ -288,7 +281,7 @@
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_RL_22	6249	Cap1			LOG		pF	Numeric Limit		C_RL_22		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_RL_21	6250	Cap1			LOG		pF	Numeric Limit		C_RL_21		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_RL_20	6251	Cap1			LOG		pF	Numeric Limit		C_RL_20		
-	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_Free_Last	6252	Cap1			LOG		pF	Numeric Limit	20	C_RL_0		
+	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_Free_Last	6252	Cap1			LOG		pF	Numeric Limit		C_RL_0		
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_VPI	6253	Cap1			LOG		V	Numeric Limit		C_VPI		Locals.C_VPI
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	C_VRL	6254	Cap1			LOG		V	Numeric Limit		C_VRL		Locals.C_VRL
 	MainSequence	BFDown SMU Min	ID#:ByFBll0Zj0GyV3xs1Z4YgB	Chyst	6255				LOG		V	Numeric Limit			Locals.C_VPI - Locals.C_VRL	
@@ -322,29 +315,66 @@
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_43	7019	Cap1			LOG		pF	Numeric Limit		C_PI_43		
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_44	7020	Cap1			LOG		pF	Numeric Limit		C_PI_44		
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_45	7021	Cap1			LOG		pF	Numeric Limit		C_PI_45		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_44	7022	Cap1			LOG		pF	Numeric Limit		C_RL_44		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_43	7023	Cap1			LOG		pF	Numeric Limit		C_RL_43		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_42	7024	Cap1			LOG		pF	Numeric Limit		C_RL_42		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_41	7025	Cap1			LOG		pF	Numeric Limit		C_RL_41		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_40	7026	Cap1			LOG		pF	Numeric Limit		C_RL_40		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_39	7027	Cap1			LOG		pF	Numeric Limit		C_RL_39		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_38	7028	Cap1			LOG		pF	Numeric Limit		C_RL_38		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_37	7029	Cap1			LOG		pF	Numeric Limit		C_RL_37		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_36	7030	Cap1			LOG		pF	Numeric Limit		C_RL_36		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_35	7031	Cap1			LOG		pF	Numeric Limit		C_RL_35		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_34	7032	Cap1			LOG		pF	Numeric Limit		C_RL_34		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_33	7033	Cap1			LOG		pF	Numeric Limit		C_RL_33		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_32	7034	Cap1			LOG		pF	Numeric Limit		C_RL_32		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_31	7035	Cap1			LOG		pF	Numeric Limit		C_RL_31		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_30	7036	Cap1			LOG		pF	Numeric Limit		C_RL_30		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_29	7037	Cap1			LOG		pF	Numeric Limit		C_RL_29		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_28	7038	Cap1			LOG		pF	Numeric Limit		C_RL_28		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_27	7039	Cap1			LOG		pF	Numeric Limit		C_RL_27		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_26	7040	Cap1			LOG		pF	Numeric Limit		C_RL_26		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_RL_25	7041	Cap1			LOG		pF	Numeric Limit		C_RL_25		
-	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_Free_Last	7044	Cap1			LOG		pF	Numeric Limit	20	C_RL_0		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_44	7022	Cap1			LOG		pF	Numeric Limit		C_RL_44		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_43	7023	Cap1			LOG		pF	Numeric Limit		C_RL_43		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_42	7024	Cap1			LOG		pF	Numeric Limit		C_RL_42		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_41	7025	Cap1			LOG		pF	Numeric Limit		C_RL_41		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_40	7026	Cap1			LOG		pF	Numeric Limit		C_RL_40		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_39	7027	Cap1			LOG		pF	Numeric Limit		C_RL_39		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_38	7028	Cap1			LOG		pF	Numeric Limit		C_RL_38		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_37	7029	Cap1			LOG		pF	Numeric Limit		C_RL_37		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_36	7030	Cap1			LOG		pF	Numeric Limit		C_RL_36		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_35	7031	Cap1			LOG		pF	Numeric Limit		C_RL_35		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_34	7032	Cap1			LOG		pF	Numeric Limit		C_RL_34		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_33	7033	Cap1			LOG		pF	Numeric Limit		C_RL_33		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_32	7034	Cap1			LOG		pF	Numeric Limit		C_RL_32		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_31	7035	Cap1			LOG		pF	Numeric Limit		C_RL_31		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_30	7036	Cap1			LOG		pF	Numeric Limit		C_RL_30		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_29	7037	Cap1			LOG		pF	Numeric Limit		C_RL_29		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_28	7038	Cap1			LOG		pF	Numeric Limit		C_RL_28		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_27	7039	Cap1			LOG		pF	Numeric Limit		C_RL_27		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_26	7040	Cap1			LOG		pF	Numeric Limit		C_RL_26		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_PI_25	7041	Cap1			LOG		pF	Numeric Limit		C_RL_25		
+	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_Free_Last	7044	Cap1			LOG		pF	Numeric Limit		C_RL_0		
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_VPI	7045	Cap1			LOG		V	Numeric Limit		C_VPI		Locals.C_VPI
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_C_VRL	7046	Cap1			LOG		V	Numeric Limit		C_VRL		Locals.C_VRL
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_Chyst	7047				LOG		V	Numeric Limit			Locals.C_VPI - Locals.C_VRL	
 	MainSequence	BFUp SMU	ID#:aZr6VtquHkSdJ3AoBMUuHB	T_Csat	7048				LOG	m	pF	Numeric Limit			Locals.C41 - Locals.C39	
+	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF1	4601		0.4	0.8	GELE		ohms	Numeric Limit	39	RF1_On		Locals.R0[0]
+	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF2	4602		0.4	0.8	GELE		ohms	Numeric Limit	39	RF2_On		Locals.R0[1]
+	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF3	4603		0.4	0.8	GELE		ohms	Numeric Limit	39	RF3_On		Locals.R0[2]
+	MainSequence	R_On_R39v	ID#:7IqHk5TmDEm1dSvjPb2nvC	R39_On_RF4	4604		0.4	0.8	GELE		ohms	Numeric Limit	39	RF4_On		Locals.R0[3]
+	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF1_Free_Last	4701		2	4	GELE	M	ohms	Numeric Limit	26	RF1_Free		
+	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF2_Free_Last	4702		2	4	GELE	M	ohms	Numeric Limit	26	RF2_Free		
+	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF3_Free_Last	4703		2	4	GELE	M	ohms	Numeric Limit	26	RF3_Free		
+	MainSequence	R_Free_Last	ID#:qvpy9tuIu0mwJ3cI/Ved0C	RF4_Free_Last	4704		2	4	GELE	M	ohms	Numeric Limit	26	RF4_Free		
+	ProcessSetup	Set Sessions DC Power	ID#:G0byPBP2TkKmE4IrjS3FEB		No Tests											
+	ProcessSetup	Set Sessions VNA	ID#:CFiRupuC7kyRXHl6YHzx9A		No Tests											
+	ProcessSetup	VNA - Configure Parallel Acquisition	ID#:97qAdxRjpEmWxEk0R5YapC		No Tests											
+	ProcessSetup	Configure SMU - RFSwitch_Vdd 3.3v	ID#:ftWxZ/cdpEyELzbdS3hr+B		No Tests											
+	ProcessSetup	Configure SMU - RFSwitch	ID#:JatMbqrsYESa3KB+yPWBwC		No Tests											
+	ProcessSetup	Configure SMU - SMU_PD	ID#:Q4nQjvlWXku/y+F7RMzc0B		No Tests											
+	ProcessSetup	Configure SMU - SMU_PD_PU_5V	ID#:a+EG+yrtREuNJddX2LLIEC		No Tests											
+	ProcessSetup	Configure SMU - PD_SMU_AWG_5V	ID#:sm0t6+EhdE+CgsdVa2oFEC		No Tests											
+	SetAWG	Set Sessions AWG	ID#:VM5MqxA0wEy/hMiUMMVC6B		No Tests											
+	SetAWG	AWG Write Waveforms - Wave0v	ID#:iPURwgJNAEqa055soEawKD		No Tests											
+	SetAWG	AWG - Write Scripts	ID#:d7Odh0ccvk+Nl0hTJ4zXOB		No Tests											
+	SetAWG	AWG - Commit	ID#:oj9+ubrBjE2XmdEqAwMCyD		No Tests											
+	SetAWG	AWG Select and Initiate Multiple Scripts - BeamsOff	ID#:nqmMq9990ECunz2Lb2sRcA		No Tests											
+	SetAWG	Close Sessions AWG	ID#:B5wRwQWwtEGM0FjiMpawTB		No Tests											
+	BurnIn	Set Sessions AWG	ID#:gAbadyvzNEWu9khoZnBolB		No Tests											
+	BurnIn	AWG - Configure for Script	ID#:Xw6lLx+rv0CMTn79wF+94B		No Tests											
+	BurnIn	AWG - Set Gain & Offset	ID#:pFmraRN0yUmDcqbU0ehXiD		No Tests											
+	BurnIn	AWG - Write Standard WaveForms	ID#:2v1slrthrUiOUY4PyNfTYC		No Tests											
+	BurnIn	AWG - Write Ramp WaveForms	ID#:fvOL/vlSw0yYH7ygmhu9+B		No Tests											
+	BurnIn	AWG - Write Scripts	ID#:9pO6vsgMeEq0FJmvSgNmPC		No Tests											
+	BurnIn	AWG - Commit	ID#:0JMUkS7JdEW9U5zqDErpFC		No Tests											
+	BurnIn	Set SMU Voltage PD_SMU_AWG_5V 5v	ID#:+DHen5J0oUmEY+GPxIyDeC		No Tests											
+	BurnIn	Burn In 100K	ID#:0y9I1sTHKEOCgkPrA6mtBD		No Tests											
+	BurnIn	AWG Select and Initiate Multiple Scripts - BeamsOff	ID#:G/V1zsHlVk+9AqWoDZ+7hA		No Tests											
+	BurnIn	Set SMU Voltage PD_SMU_AWG_5V 0v	ID#:Fx7A9mBoJkWzRdcWFpc/IA		No Tests											
+	BurnIn	Close Sessions AWG	ID#:s+J0PO4/0UCU/HB2LrmV9A		No Tests											
+	ProcessCleanup	Configure SMU - RFSwitch_Vdd 0v	ID#:txWy4iu0h0uUiuTxgpPoUB		No Tests											
+	ProcessCleanup	Close Sessions  DC Power	ID#:9xDVKaYlwkmKE0Z+kT4i/C		No Tests											
+	ProcessCleanup	Close Sessions VNA	ID#:w7RMLWjYqUmbmIultGK/0D		No Tests											
 </SemiconductorModuleTests>																
